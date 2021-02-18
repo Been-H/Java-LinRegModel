@@ -1,5 +1,3 @@
-import javax.sound.sampled.Line;
-
 public class LinearRegression {
 
     private int lengthData;
