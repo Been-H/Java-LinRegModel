@@ -4,8 +4,6 @@ public class LinearRegression {
     private double slope;
     private double yIntrercept;
 
-    public LinearRegression() {}
-
     public double getSlope() {
         return slope;
     }
@@ -14,7 +12,7 @@ public class LinearRegression {
         return yIntrercept;
     }
 
-    public double sigma(double[] arr, boolean squared) {
+    private double sigma(double[] arr, boolean squared) {
         double sum = 0;
         for (double val : arr) {
             if (squared) {
@@ -27,7 +25,7 @@ public class LinearRegression {
         return sum;
     }
 
-    public double sigma(double[] xArr, double[] yArr) {
+    private double sigma(double[] xArr, double[] yArr) {
         double sum = 0;
         for (int i = 0; i < xArr.length; i++) {
             sum += (xArr[i] * yArr[i]);
